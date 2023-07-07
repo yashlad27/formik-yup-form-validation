@@ -1,8 +1,11 @@
 import { useFormik } from "formik";
 import { basicSchema } from "../schemas";
 
-const onSubmit = () => {
+const onSubmit = (values, actions) => {
   console.log("Form Submitted");
+
+  console.log(values);
+  console.log(actions);
 };
 
 const BasicForm = () => {
